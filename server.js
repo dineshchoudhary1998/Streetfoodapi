@@ -1,7 +1,7 @@
 // .env file
 
 //DATABASE_URL=mongodb://localhost/user_details
-require('dotenv').config({path:'variables.env'})
+require('dotenv').config({path:'./variables.env'})
 
 const express = require('express')
 const app = express()
