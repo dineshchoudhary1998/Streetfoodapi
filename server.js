@@ -79,7 +79,7 @@ app.use('/like', postlikeRouter)
 
 
 //----------------Get apis-----------------
-app.get('/',(req,res)=>{
+app.get('https://salty-earth-73447.herokuapp.com/',(req,res)=>{
   res.send("HELLO WORLD")
 })
 
