@@ -79,8 +79,23 @@ app.use('/like', postlikeRouter)
 
 
 //----------------Get apis-----------------
-app.get('https://salty-earth-73447.herokuapp.com/',(req,res)=>{
-  res.send("HELLO WORLD")
+app.use((req,res,next)=>{
+  const err=new Error("not found")
+  err.status=404
+  next( err)  
+})
+
+
+
+//Error handler
+app.use((err,req,res,next)=>{
+  res.status(err.status|| 500)
+  res.send({
+      error:{
+          status:err.status,
+          message:err.message
+      }
+  })
 })
 
 const getcommentRouter =require('./routes/getapis/getcomments')
