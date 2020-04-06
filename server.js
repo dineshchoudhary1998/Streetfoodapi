@@ -56,6 +56,7 @@ mongoose.connect(process.env.MONGO_URL,
 app.use(express.json())
 //POST APIS 
 
+
 const postuserRouter = require('./routes/postapis/postuserdetails')
 app.use('/user', postuserRouter)
 
@@ -76,10 +77,11 @@ app.use('/review', postreviewRouter)
 const postlikeRouter =require('./routes/postapis/postlikes')
 app.use('/like', postlikeRouter)
 
-app.use('/',express.static('client'))
+
 //----------------Get apis-----------------
-
-
+app.get('/',(req,res)=>{
+  res.send("HELLO WORLD")
+})
 
 const getcommentRouter =require('./routes/getapis/getcomments')
 app.use('/getcomment', getcommentRouter)
