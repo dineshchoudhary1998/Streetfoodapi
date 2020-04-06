@@ -7,7 +7,7 @@
     "development": "nodemon server.js",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "dinesh",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
