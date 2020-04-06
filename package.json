@@ -2,10 +2,10 @@
   "name": "api",
   "version": "1.0.0",
   "description": "restapi",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "development": "nodemon server.js",
-    "start": "node server.js"
+    "development": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "dinesh",
   "license": "ISC",
