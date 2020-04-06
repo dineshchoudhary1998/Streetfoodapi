@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "restapi",
   "main": "server.js",
   "scripts": {
     "development": "nodemon server.js",
